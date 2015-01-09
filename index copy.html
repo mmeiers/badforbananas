@@ -1,0 +1,738 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>BadforBananas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!--imports the main css file-->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+<!--imports prettyPhoto css file-->
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" media="screen" />
+<!--imports anythingslider css file-->
+<link rel="stylesheet" type="text/css" href="css/anythingslider.css" media="screen" />
+
+<!--imports Google Maps API key-->
+ <!-- Note: you will need to replace the sensor parameter below with either an explicit true or false value.-->
+  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAAgz6rkmfVcPgBLRkfPR1OVRSwO-1kLjn0usfq73TO6vkFQxuILhTJJAERen4ogfhmgMhdHweafXMo3A" type="text/javascript"></script>
+
+<!--imports jquery-->
+<script type="text/javascript" src="js/jquery-1.5.2.js"></script>
+<!--imports jquery form plugin-->
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<!--imports twitter feed plugin-->
+<script type="text/javascript" src="js/jquery.tweet.js"></script>
+<!--imports easing plugin-->
+<script type="text/javascript" src="js/easing.js"></script>
+<!--imports anything slider plugin-->
+<script type="text/javascript" src="js/jquery.anythingslider.min.js"></script>
+<!--imports prettyPhoto plugin-->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<!--imports jQuery Tools plugin-->
+<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+<!--imports scrollTo plugin-->
+<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+<!--imports local scroll plugin-->
+<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+
+<!--imports custom javascript code-->
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script type="text/javascript">
+
+	$(document).ready(function(){	
+		$('#slider ul').anythingSlider({
+			width : 610,          // Override the default CSS width
+			height: 224,
+			delay: 4000,
+			animationTime: 600,
+			autoPlay: true,
+			buildNavigation: false,
+			hashTags: false, 
+			easing: 'easeInExpo'
+		});		
+	});		
+	
+</script>
+
+<!--[if IE 7]><link href="css/ie7.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+
+</head>
+
+<body>
+	<div id="left" class="plates">
+		<ul id="navigation">
+			<li><a class="active" href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#blog">Resume</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+		
+		<div id="logo">
+			<h1><a href="#home"><FONT COLOR="d1db30">Bad<FONT COLOR="cccccc">for</FONT>Bananas</FONT></a></h1>
+			<p>Portfolio of Mathew Lawson Meiers</p>
+		</div>
+		<p id="copyright">Copyright &copy; 2012 Mat Meiers. All rights reserved</p>
+	</div><!-- end left -->	
+	
+	<div id="right" class="square-grid">
+	
+	
+	<!-- HOME PAGE -->
+	
+	
+		<div id="home" class="page">
+			<h2>Welcome to my portfolio</h2>
+			<p class="sub-title">Mathew Lawson Meiers</p>
+			<div class="featured">
+				
+				<div id="slider">
+					<ul>
+					<!-- slide 1 -->
+						<li>
+							<div class="slide-img">
+								<img class="portrait" src="img/portrait.png" alt="image" />
+							</div>
+							
+							<div class="slide-text">
+								<h3>Banana-eater extraordinaire. I drive fast cars, play soccer, and carry the cat around like a football. Oh, and I design stuff too. </h3>
+								
+								<p>I have extensive print and web design knowledge, as well as html and java script. I work hard and like learning new things. I spend my weekends tinkering with my M3, and evenings scouring the web for cool car parts.</p>
+                                
+								<!--<a class="button" href="#portfolio">View Portfolio</a>-->
+							</div>
+						</li>
+						
+						<!-- slide 2 -->
+						<li>
+							<div class="slide-img">
+								<img class="portrait" src="img/portrait2.png" alt="image" />
+							</div>
+							
+							<div class="slide-text">
+								<h3>I currently work for Rise Display a digital signage company in Kansas City.</h3>
+								
+								<p>Rise has been providing digital signage to universities and businesses across North America for over 15 years.
+Their Complete Display Solutions enable companies to deliver their messages via LED tickers, touch screen displays and lcd video walls using a web based content management system. </p>
+								
+								<!--<a class="button" href="#portfolio">View Portfolio</a>-->
+							</div>
+						</li>							
+					</ul>											
+				</div><!-- end slider -->
+			
+			</div><!-- end featured -->
+			
+			<div class="separator-line"></div>
+			
+			<p class="slogan">I BUILD DIGITAL SIGNAGE CONTENT, WEBSITES AND PRINTED MEDIA TO HELP YOU COMMUNICATE THE
+RIGHT MESSAGE. BASED IN KANSAS CITY, KANSAS, WITH WORLDWIDE CONNECTIONS.</p>
+			
+			<div class="separator-line"></div>
+			
+			<div class="boxes">
+				<div class="one-third">
+					<div class="box-title">
+						<img class="box-icon" src="img/box-icons/digital-logo.png" alt="image" />
+						<h3>Digital Signage</h3>
+						<span class="subtitle">Experienced in a progressive market</span>
+					</div>	
+					<p>While working at Rise Display, I’ve created digital signage designs for universities, restaurants and
+financial institutions. I work closely with the customer to develop a look that fits
+their brand and gets across their message in the best way possible.</p>
+					<a href="#portfolio">see my work</a>
+				</div>
+				
+				<div class="one-third">
+					<div class="box-title">
+						<img class="box-icon" src="img/box-icons/computer-logo.png" alt="image" />
+						<h3>Websites</h3>
+						<span class="subtitle">Flash, HTML and CSS Expert</span>
+					</div>	
+					<p>I build websites using a combination of flash, html and css. The most recent website I’ve worked on is artofmalach.com, a pottery and ceramics site for a talented
+sculpture artist. Check it out here.</p>
+					<a href="#portfolio">see my work</a>
+				</div>
+				
+				<div class="one-third last">
+					<div class="box-title">
+						<img class="box-icon" src="img/box-icons/branding-logo.png" alt="image" />
+						<h3>Branding</h3>
+						<span class="subtitle">Print versed and Branding Know-how</span>
+					</div>	
+					<p>Creating a high-quality, memorable, and distinctive look is the first step toward a new company's success. I've done logo design as well as rebranding for several small business and entrepreneurs.</p>
+					<a href="#portfolio">see my work</a>
+				</div>						
+				
+				<div class="clear"></div>
+				
+			</div><!-- end boxes -->			
+			
+			<div class="separator-line"></div>
+			
+			<div class="one-third last">
+				<h3>Twitter Feed</h3>
+				<div id="twitter-feed"></div>					
+			</div>
+			
+			
+			<div class="clear"></div>
+			
+		</div><!-- end home page -->			
+
+		
+	<!-- ABOUT PAGE -->
+		
+		
+		<div id="about" class="page">
+			<h2>About</h2>	
+			<p class="sub-title">about the banana man</p>
+			<div class="full-width">
+				
+				<p><img class="image-left" src="img/align.jpg" alt="Image description" />
+				No, I don’t really know where the “Bad for Bananas” came from, but I think it’s important to add
+a touch of humor to the things that interest you. All my life I’ve been the creative type: drawing
+and painting from an early age. As I went through school, I just kept going with the creative mode.
+I specialize in digital and web design, though I’m experienced in print as well. I hope to continue
+employing this enjoyment in design in all areas of my work. And if you can’t tell, I really DO like bananas!</p>
+
+<p>[In the picture] Tinkering with my 2004 Audi S4. Yes, I've owned an assortment of german cars.</p>
+
+	<blockquote>
+				<p>Not only is Mat a fantastic designer and able to bring a wide variety of ideas to make a design workable and fresh, he is also fun to work with and is good to burn through challenges of any kind. There are as many personalities as there are people, but some are people you just like being around, and that is definitely Mat. I recommend him and encourage people to connect with and get to know him too.</p>
+				<div class="author">Mike Smick - Smickworks Inc.</div>
+			</blockquote>
+	
+				
+									
+					
+								
+			</div>				
+			
+			
+			
+			
+		</div><!-- end about page -->					
+		
+		
+	<!-- PORTFOLIO PAGE -->	
+		
+		
+		<div id="portfolio" class="page">
+		
+			<h2>Project Showcase</h2>
+			<p class="sub-title">What the banana man has done</p>
+			
+			<div id="portfolio-content" class="js-off-overflow">	
+
+				<!-- portfolio page 1 -->
+					<ul id="page1" class="portfolio-thumbs js-off-position">
+						 <li>
+							<a href="img/portfolio/large/google-io.jpg"><img src="img/portfolio/thumb/google-io.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Google I / O</h5>
+								<p>Unleash the power of Kiosk Apps - built a responive website to demonstrate a flight concierge display for use at                                         Google I/O conference.</p>
+								<a href="https://www.youtube.com/watch?v=aGvFbBt-LNA" target="_blank">watch the keynote</a>
+								<a class="zoom-btn" href="img/portfolio/large/google-io.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+						<li>
+							<a href="img/portfolio/large/school-lunch.jpg"><img src="img/portfolio/thumb/school-lunch.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>School Lunch Template - Responsive template built for digital signage. All graphics are svg and animated with css keyframes.</p>
+								<a href="http://rise-vision.github.io/content-templates/school-lunch/school-lunch.html" target="_blank">see it in action</a>
+								<a class="zoom-btn" href="img/portfolio/large/school-lunch.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+                        <li>
+							<a href="img/portfolio/large/tradeshow-booth.jpg"><img src="img/portfolio/thumb/tradeshow-booth.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Tradeshow Booth</h5>
+								<p>Renderings developed for Google to give away Asus Chromeboxes at digital signage conference.</p>
+								<a href="http://www.risevision.com" target="_blank">www.risevision.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/tradeshow-booth.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+                        
+                        <li>
+							<a href="img/portfolio/large/corporate-messaging.jpg"><img src="img/portfolio/thumb/corporate-messaging.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>Corporate Messaging - display developed to relay internal messaging within our company.</p>
+								<a href="http://preview.risevision.com/Viewer.html?type=presentation&id=f8c583c9-1978-4bef-9c9f-c2d727e39c2c&showui=false" target="_blank">see it in action</a>
+								<a class="zoom-btn" href="img/portfolio/large/corporate-messaging.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+                        
+						<li>
+							<a href="img/portfolio/large/004.jpg"><img src="img/portfolio/thumb/004.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>District Case VI - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/004.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+						<li>
+							<a href="img/portfolio/large/005.jpg"><img src="img/portfolio/thumb/005.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>Stevens Insitute of Technology - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/005.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+						<li>
+							<a href="img/portfolio/large/006.jpg"><img src="img/portfolio/thumb/006.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>Bemidji State University - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/006.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+						<li>
+							<a href="img/portfolio/large/007.jpg"><img src="img/portfolio/thumb/007.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>St. Vincent's Healthcare - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/007.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+						<li>
+							<a href="img/portfolio/large/008.jpg"><img src="img/portfolio/thumb/008.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>NDSU College of Pharmacy - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/008.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+						
+					</ul>	
+					<!-- portfolio page 2 -->
+					<ul id="page2" class="portfolio-thumbs js-off-position">
+						
+						<li>
+							<a href="img/portfolio/large/002.jpg"><img src="img/portfolio/thumb/002.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>Bucknell University - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/002.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+						<li>
+							<a href="img/portfolio/large/003.jpg"><img src="img/portfolio/thumb/003.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>George Mason University - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/003.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+                        <li>
+							<a href="img/portfolio/large/012.jpg"><img src="img/portfolio/thumb/012.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Flash Website</h5>
+								<p>artofmalach.com - Website designed for artist Kenny Malach showcasing his pottery work. </p>
+								<a href="http://www.artofmalach.com" target="_blank">www.artofmalach.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/012.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+                        
+                        <li>
+							<a href="img/portfolio/large/001.jpg"><img src="img/portfolio/thumb/001.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>Crowder College - Interactive display content designed by Mat Meiers while employed with Rise Display.</p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/001.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+                        
+						<li>
+							<a href="img/portfolio/large/004.jpg"><img src="img/portfolio/thumb/004.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>District Case VI - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/004.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+						<li>
+							<a href="img/portfolio/large/005.jpg"><img src="img/portfolio/thumb/005.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>Stevens Insitute of Technology - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/005.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+						<li>
+							<a href="img/portfolio/large/006.jpg"><img src="img/portfolio/thumb/006.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>Bemidji State University - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/006.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+						<li>
+							<a href="img/portfolio/large/007.jpg"><img src="img/portfolio/thumb/007.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>St. Vincent's Healthcare - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/007.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+						<li>
+							<a href="img/portfolio/large/008.jpg"><img src="img/portfolio/thumb/008.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>NDSU College of Pharmacy - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/008.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+						
+					</ul>	
+				
+				
+				
+				<!-- portfolio page 3 -->						
+					<ul id="page3" class="portfolio-thumbs js-off-position">
+						<li>
+							<a href="img/portfolio/large/010.jpg"><img src="img/portfolio/thumb/010.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>SOTC University - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/010.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+						<li>
+							<a href="img/portfolio/large/011.jpg"><img src="img/portfolio/thumb/011.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>St. Joseph Memorial Hospital - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/011.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+						
+						<li>
+							<a href="img/portfolio/large/009.jpg"><img src="img/portfolio/thumb/009.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>UWA Livingston - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/009.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+						<li>
+							<a href="img/portfolio/large/013.jpg"><img src="img/portfolio/thumb/013.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>University of North Dakota - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/013.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+                        
+                        <li>
+							<a href="img/portfolio/large/014.jpg"><img src="img/portfolio/thumb/014.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>University of Hawaii - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/014.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+                        
+                         <li>
+							<a href="img/portfolio/large/015.jpg"><img src="img/portfolio/thumb/015.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>ING Direct - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/015.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+                          <li>
+							<a href="img/portfolio/large/016.jpg"><img src="img/portfolio/thumb/016.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>BMW - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/016.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+                        
+                               <li>
+							<a href="img/portfolio/large/017.jpg"><img src="img/portfolio/thumb/017.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>Educomm - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/017.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+                        	       <li>
+							<a href="img/portfolio/large/018.jpg"><img src="img/portfolio/thumb/018.jpg" alt="Image description" /></a>
+							<div class="overlay">
+								<h5>Digital Signage</h5>
+								<p>Anderson University - Interactive display content designed by Mat Meiers while employed with Rise Display. </p>
+								<a href="http://www.risedisplay.com" target="_blank">www.risedisplay.com</a>
+								<a class="zoom-btn" href="img/portfolio/large/018.jpg" rel="prettyPhoto"></a>
+							</div>
+						</li>
+					</ul>
+					
+																									
+				
+			</div><!-- end portfolio-content-->	
+			
+			<ul class="portfolio-nav">
+				<li><a class="current" href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+			
+			<div class="clear"></div>				
+			
+		</div><!-- end portfolio page -->
+		
+		
+	<!-- RESUME PAGE -->	
+		
+		
+		<div id="blog" class="page">
+			<h2>Resume</h2>	
+			<p class="sub-title">You'd be bananas not to hire me</p>
+			
+			<h3>Mathew Meiers</h3>
+<div class="post-metadata">
+						<p><a href="#">Address: </a>5923 King Street - Shawnee,KS <br /><a href="#">Phone: </a>913.439.0791  <br /><a href="#">Email: </a> mathew_meiers@yahoo.com</p>
+					</div>
+					
+														
+			<div class="toggles">
+				<div class="toggle-container full-width">						
+					<div class="toggle-header">
+						<h4>Experience</h4>
+						<a class="toggle-link toggle-open" href="#"></a>
+						<div class="clear"></div>
+					</div>
+                    
+					<div class="toggle-content">
+                    <h3>Rise Display</h3>	
+						<div class="one-third">
+							
+							<p><b>Position Held:</b><br /> Multimedia Design Lead <br /> September 2008 - Present</p>
+						</div>
+						
+						<div class="two-third last">
+								<p><b>Duties:</b><br />Primary roles include designing/building content for touch screen and large format LCD displays. Other duties include troubleshooting hardware and software related issues while overseeing a small group of designers. Software technology routinely utilized includes Photoshop, Flash, Dreamweaver, HTML, CSS and proprietary web based digital signage software. Being the progressive industry that digital signage is, the job requires me to keep up to date on new web based technologies, which I thoroughly enjoy.</p>
+						</div>
+                        <h3>Allen Press</h3>
+                        <div class="one-third">
+							<p><b>Position Held:</b><br />Electronic Prepress Technician <br /> March 2006 - September 2008</p>
+						</div>
+						
+						<div class="two-third last">
+								<p><b>Duties:</b><br />Processed and produced customer jobs for print publication using layout programs. Performed preflight check of jobs and pinpointed problems before readying for press. Fixed font and graphic problems, color/trapping requirements, last minute revisions and art placement. </p>
+						</div>
+						
+						<div class="one-third">
+							<p><b>Position Held:</b><br />Web Publishing Dept.<br /> Online Publishing Assistant <br /> March 2005 - March 2006</p>
+						</div>
+						
+						<div class="two-third last">
+								<p><b>Duties:</b><br />Assisted in the conversion of printed magazines and journals to online sites. Used web browsers to proof web sites and fix any content or formatting problems. Worked in Photoshop and Illustrator to batch process figures and images and ran production filters on HTML and XML files.</p>
+						</div>
+                        
+                        <div class="one-third">
+							<p><b>Position Held:</b><br />Composition Services<br /> Typesetter <br /> September 2003 - March 2006</p>
+						</div>
+						
+						<div class="two-third last">
+								<p><b>Duties:</b><br />Entered corrections to text, tables and math as marked by proofreaders or editors. Troubleshot departmental issues including color management, file conversions, and font management. Developed automated pdf worflow for typesetting department.</p>
+						</div>
+												
+						<div class="clear"></div>
+						
+					</div><!-- end toggle-content -->
+				</div><!-- end toggle-container -->
+				
+				<div class="toggle-container full-width">						
+					<div class="toggle-header">
+						<h4>Education-Certifications</h4>
+						<a class="toggle-link toggle-open" href="#"></a>
+						<div class="clear"></div>
+					</div>
+					<div class="toggle-content">	
+						<div class="one-half">
+								<p>Johnson County Community College<br/>
+								HTML and Advanced CSS Certification<br />June 2011</p>
+						</div>
+						
+						<div class="one-half last">
+								<p>Salina Area Vocational School<br/>
+								Commercial & Advertising Art Degree<br/>
+								2003</p>											
+						</div>
+						
+						<div class="one-half">
+							<p>Smoky Valley High School<br/> Lindsborg, KS
+                            Diploma <br/> 2001</p>
+						</div>
+						
+						
+						
+						<div class="clear"></div>
+					</div>
+				</div><!-- end toggle-container -->
+				
+				<div class="toggle-container full-width">						
+					<div class="toggle-header">
+						<h4>Skills</h4>
+						<a class="toggle-link toggle-open" href="#"></a>
+						<div class="clear"></div>
+					</div>
+					<div class="toggle-content">	
+						<div class="one-third">
+							<ul class="custom-list square">
+								<li>Mac and PC platforms</li>
+								<li>Salesforce</li>
+								<li>Base Camp</li>
+								<li>Get Satisfaction</li>			
+							</ul>
+						</div>
+						
+						<div class="one-third">
+							<ul class="custom-list square">
+								<li>HTML/CSS</li>
+								<li>Actionscript</li>
+								<li>Basic Javascript</li>
+								<li>XML</li>											
+							</ul>
+						</div>
+						
+						<div class="one-third last">
+							<ul class="custom-list square">
+								<li>Photoshop</li>
+								<li>Illustrator</li>
+								<li>Flash</li>
+								<li>Dreamweaver</li>											
+							</ul>
+						</div>
+						
+						<div class="one-third">
+							<ol class="custom-list square">
+								<li>InDesign</li>
+								<li>QuarkXpress</li>
+								<li>Pitstop</li>
+								<li>Prinergy</li>			
+							</ol>
+						</div>
+						
+						<div class="one-third">
+							<ol class="custom-list square">
+								<li>Acrobat</li>
+								<li>Excel</li>
+								<li>Powerpoint</li>
+								<li>Word</li>											
+							</ol>
+						</div>
+						
+						
+						
+						<div class="clear"></div>
+					</div>
+				</div><!-- end toggle-container -->
+				
+						
+				
+			</div><!-- end toggles -->
+			<blockquote>
+				<p>Not only is Mat a fantastic designer and able to bring a wide variety of ideas to make a design workable and fresh, he is also fun to work with and is good to burn through challenges of any kind. There are as many personalities as there are people, but some are people you just like being around, and that is definitely Mat. I recommend him and encourage people to connect with and get to know him too.</p>
+				<div class="author">Mike Smick - Smickworks Inc.</div>
+			</blockquote>
+		</div><!-- end resume page -->
+				
+		
+	<!-- CONTACT PAGE -->	
+		
+		
+		<div id="contact" class="page">
+			<h2>Contact</h2>
+			<p class="sub-title">Getting ahold of the banana man</p>
+			
+			<div class="two-third">
+				<h3>Drop me a line</h3>
+				<p>Just don't trip and slide on the peel.</p>
+				
+				<form id="contact_form" method="post" action="submitemail.php">						
+					<label for="name">Name:</label><input  class="textbox" type="text" name="name" id="name" />
+					<label for="email">E-mail:</label><input  class="textbox" type="text" name="email" id="email" />
+					<label for="subject">Subject:</label><input  class="textbox" type="text" name="subject" id="subject" />
+					<label for="message">Message:</label><textarea class="textbox" name="message" id="message" rows="" cols=""></textarea>
+					<input type="submit" name="submit" value="Send Message" id="submit" /> <br />
+					<p id="message-outcome"></p>
+				</form>
+				
+			</div>
+			
+			<div class="one-third last">				
+				<h3>Contact info</h3>
+				<p>
+					5923 King Street<br />
+					Shawnee, KS 66203<br />
+					United States of America <br />
+				</p>
+				
+				<p>
+					Phone: +913 439 0791 <br />
+					Mail:&nbsp;<a href="#">&nbsp;badforbananas@gmail.com</a> <br />
+					Website: <a href="http://www.badforbananas.com">you're already there</a> <br />
+				</p>
+				
+				<div class="social-networks">
+					<h3>Connect with me</h3>
+					<p>What's yellow and flashes? A banana with a loose connection.</p>	
+					<ul class="social-links">						
+						<li class="facebook"><a href="http://www.facebook.com/mmeiers" target="_blank">Facebook</a></li>
+						<li class="twitter"><a href="https://twitter.com/#!/milklizard" target="_blank">Twitter</a></li>
+						<li class="yahoo"><a href="http://profile.yahoo.com/TWK7RMA5L2X7EMWNENYGSLHMWI/" target="_blank">Yahoo</a></li>
+													
+					</ul>
+				</div><!-- end social-networks -->
+			</div>
+			
+			<div class="clear"></div>
+			
+			<div class="separator-line"></div>
+			
+			<div class="full-width">
+				<h3>Where I Reside</h3>
+				<p>In case you were wondering where I sleep.</p>
+				
+				<div id="google-map">
+					<iframe width="596" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=5923+King+Street,+Shawnee,+KS&amp;aq=0&amp;oq=5923+King+Street,+Shawnee&amp;sll=37.0625,-95.677068&amp;sspn=41.003738,81.5625&amp;vpsrc=0&amp;ie=UTF8&amp;hq=&amp;hnear=5923+King+St,+Shawnee,+Kansas+66203&amp;t=h&amp;ll=39.021318,-94.716568&amp;spn=0.013337,0.051069&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=5923+King+Street,+Shawnee,+KS&amp;aq=0&amp;oq=5923+King+Street,+Shawnee&amp;sll=37.0625,-95.677068&amp;sspn=41.003738,81.5625&amp;vpsrc=0&amp;ie=UTF8&amp;hq=&amp;hnear=5923+King+St,+Shawnee,+Kansas+66203&amp;t=h&amp;ll=39.021318,-94.716568&amp;spn=0.013337,0.051069&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+				</div>
+				
+			</div>			
+			
+			<div class="clear"></div>				
+		
+		</div><!-- end contact page -->
+
+	</div><!-- end right -->	
+</body>
+
+</html>
