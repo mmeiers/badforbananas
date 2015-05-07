@@ -465,12 +465,12 @@ ul#navigation li a {
 }
 
 ul#navigation li a:hover {
-	color: #80CBC4;
+	color: #FFE082;
 	text-decoration: none;
 }
 
 ul#navigation li a.active {
-	color: #80CBC4;
+	color: #FFE082;
 }
 
 
@@ -749,14 +749,14 @@ p {
 	font-size: 11px;
 	color: #f7f7f7;
 	padding: 3px 7px;
-	background: #FBC02D;
+	background: #8c8c8c;
 	display: inline-block;
 	margin-bottom: 15px;
     border-radius: 2px;
 }
 
 .boxes a:hover, .post-more-link:hover, .button:hover {
-	background: #8c8c8c;
+	background: #FBC02D;
 	text-decoration: none;
 }
 
