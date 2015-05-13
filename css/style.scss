@@ -32,17 +32,15 @@
 			  SOCIAL LINKS
 			
 ================================================*/			
-/* Color Set 
+/* Color Variables */
 
-Background Dark: #263238
-Background Light: #37474F
-Background Lightest: #546E7A
-Grey: #757575
-Blue Highlight: #80CBC4
-Yellow Medium: #FBC02D
-Yellow Light: #FFE082
-Yellow Heavy: #F9A825
-*/
+$primary: #FBC02D;
+$secondary: #80CBC4;
+$background: #263238;
+$text: #757575;
+$textSecondary: #757575;
+
+
 
 
 /********************BEGIN RESET********************/
@@ -85,7 +83,7 @@ html, body, #left {
 }
 
 body {
-	color: #757575;
+	color: $text;
 	font-size: 12px;
 	font-family: Arial, san-serif;
 	line-height: 20px;
@@ -100,17 +98,17 @@ h1, h2, h3, h5  {
 h1 {
 	font-size: 50px;
 	line-height: 40px;
-	color: #80cbc4;
+	color: $secondary;
 	text-shadow: 1px 1px #1e1e1e;
 }
 
 h2 {
 	font-size: 36px;
-	color: #263238;
+	color: $background;
 }
 
 h3 {
-	color: #37474F;
+	color: $textSecondary;
 	font-size: 22px;
 	font-weight: normal;
 	line-height: 22px;
@@ -119,7 +117,7 @@ h3 {
 
 h4 {
 	font-family: Bebas, Tahoma, Arial, sans-serif;
-	color: #80CBC4;
+	color: $secondary;
 	font-size: 20px; 
 	font-weight: normal;
 }
@@ -135,7 +133,7 @@ h6 {
 }
 
 a {
-	color: #80cbc4;
+	color: $secondary;
 	text-decoration: none;
 }
 
@@ -151,7 +149,7 @@ table {
 }
 
 th   { 
-	color: #80cbc4;
+	color: $secondary;
 	background: #f2f2f2; 
 	text-align: left; 
 }
@@ -170,7 +168,7 @@ tr.even td  {
 }
 
 caption     {
-	color: #80CBC4;
+	color: $secondary;
 	border-collapse: collapse;
 }
 /*****************END TABLES************************/
@@ -190,7 +188,7 @@ z-index: 99;
 }
 
 .ball-shadow {
-  background: radial-gradient(50% 50%, #111 0%, #263238 100%);
+  background: radial-gradient(50% 50%, #111 0%, $background 100%);
   height: 10px;
   width: 80px;
     z-index: 99;
@@ -286,7 +284,7 @@ blockquote  {
 	text-align: right;
 	font-size: 12px;
 	font-style: normal;
-	color: #80cbc4;
+	color: $secondary;
 }
 
 abbr, acronym { 
@@ -325,12 +323,12 @@ ol li {
 /*=== LEFT SIDE
 ==================================================*/
 	.grid-left {
-		background: url(../img/backgrounds/right/lines.png) repeat #263238;
+		background: url(../img/backgrounds/right/lines.png) repeat $background;
 	}
 
 	.plates {
-		/*background: url(../img/banana.svg) no-repeat 100% 0% #263238;*/
-        background-color: #263238;
+		/*background: url(../img/banana.svg) no-repeat 100% 0% $background;*/
+        background-color: $background;
 	}
 
 	.noise {
@@ -382,6 +380,44 @@ ol li {
     position: relative;
     left: -100px;
     bottom:-50px;
+	-webkit-animation-duration: 10s;
+    -webkit-animation-name: tada;
+	-webkit-animation-iteration-count: infinite;
+	 /* Hey browser, use your GPU */
+   	-webkit-transform: translate3d(0, 0, 0);
+}
+
+
+@-webkit-keyframes tada {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  1%, 2% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  3%, 5%, 7%, 9% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  4%, 6%, 8% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  10% {
+    -webkit-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+	
+	100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 
@@ -419,7 +455,7 @@ ol li {
 	right: 30px;
 	bottom: 0px;
 	font-size: 11px;
-	color: #757575;
+	color: $text;
 	margin-bottom: 0;
 }
 
@@ -465,12 +501,12 @@ ul#navigation li a {
 }
 
 ul#navigation li a:hover {
-	color: #FFE082;
+	color: lighten($primary, 10%);
 	text-decoration: none;
 }
 
 ul#navigation li a.active {
-	color: #FFE082;
+	color: lighten($primary, 10%);
 }
 
 
@@ -506,7 +542,7 @@ ul#navigation li a.active {
 }
 
 .caption {
-	color: #757575;
+	color: $text;
 	left: 15px;
 	bottom: 15px;
 	padding: 15px;
@@ -516,7 +552,7 @@ ul#navigation li a.active {
 }
 
 .caption h3 {
-	color: #80CBC4;
+	color: $secondary;
 }
 
 .caption p {
@@ -605,7 +641,7 @@ ul#navigation li a.active {
 
 .slide-text h3 {
 	font-size: 30px;
-	color: #80cbc4;
+	color: $secondary;
 	line-height: 30px;
 	margin: 20px 0;
 }
@@ -665,7 +701,7 @@ ul#navigation li a.active {
 	font-family: Bebas, Arial, sans-serif;
 	font-size: 24px;
 	line-height: 26px;
-	color: #37474F;
+	color: $textSecondary;
 	margin: 30px 0 15px 0;
 }
 
@@ -749,14 +785,14 @@ p {
 	font-size: 11px;
 	color: #f7f7f7;
 	padding: 3px 7px;
-	background: #8c8c8c;
+	background: $secondary;
 	display: inline-block;
 	margin-bottom: 15px;
     border-radius: 2px;
 }
 
 .boxes a:hover, .post-more-link:hover, .button:hover {
-	background: #FBC02D;
+	background: $primary;
 	text-decoration: none;
 }
 
@@ -830,7 +866,7 @@ ul.tweet_list li {
 
 .toggle-container h4 {
 	float: left;
-	color: #757575;
+	color: $text;
 }
 
 .toggle-header a {
@@ -946,18 +982,18 @@ ol li {
 	font-size: 11px;
 	margin-right: 10px;
 	color: #fff;
-	background: #8c8c8c;
+	background: $text;
 	padding: 6px 10px;
     border-radius: 2px;
 }
 
 .portfolio-nav li a:hover {
-	background: #FBC02D;
+	background: $primary;
 	text-decoration: none;
 }
 
 .portfolio-nav li a.current { 
-	background: #FBC02D;
+	background: $primary;
 }
 
 
@@ -987,7 +1023,7 @@ ul.portfolio-thumbs a {
 .overlay {
 	font-size: 11px;
 	line-height: 16px;
-	background: #263238;
+	background: $background;
 	position: absolute;
 	top: 190px;
 	left: 0;
@@ -1004,7 +1040,7 @@ ul.portfolio-thumbs a {
 .overlay h5 {
 	font-family: Bebas, Arial, sans-serif;
 	font-size: 22px;
-	color: #80CBC4;
+	color: $secondary;
 	font-weight: normal;
 	margin-bottom: 20px;
 }
@@ -1029,7 +1065,7 @@ ul.portfolio-thumbs li .play-btn {
 }
 
 ul.portfolio-thumbs li .zoom-btn:hover, ul.portfolio-thumbs li .play-btn:hover {
-	background-color: #FBC02D;
+	background-color: $primary;
 }
 
 
@@ -1045,7 +1081,7 @@ ul.portfolio-thumbs li .zoom-btn:hover, ul.portfolio-thumbs li .play-btn:hover {
 }
 
 .post-title h3 a {
-	color: #37474F;
+	color: $textSecondary;
 }
 
 .post-title h3 a:hover {
@@ -1093,7 +1129,7 @@ ul.portfolio-thumbs li .zoom-btn:hover, ul.portfolio-thumbs li .play-btn:hover {
 	text-align: right;
 	font-size: 26px;
 	font-family: Bebas, Arial, sans-serif;
-	color: #37474F;
+	color: $textSecondary;
 	margin-bottom: 30px;
 }
 
@@ -1126,7 +1162,7 @@ ul.portfolio-thumbs li .zoom-btn:hover, ul.portfolio-thumbs li .play-btn:hover {
 }
 
 .comment-text cite {
-	color: #80cbc4;
+	color: $secondary;
 }
 
 .comment-reply {
@@ -1154,7 +1190,7 @@ form {
 }
 				
 .textbox {
-	color: #757575;
+	color: $text;
 	width: 262px;
 	margin-bottom: 15px;
 	padding: 6px;
@@ -1184,7 +1220,7 @@ label {
 	font-family: inherit;
 	font-size: 11px;	
 	color: #fff;
-	background: #80cbc4;
+	background: $secondary;
 	padding: 6px 10px;
 	border: none;
 }
