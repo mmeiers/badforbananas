@@ -1,0 +1,1372 @@
+@charset "UTF-8";
+/*===================================================================
+
+		TABLE OF CONTENTS		
+		
+		1. RESET
+		2. TABLES
+		3. MISC
+		4. BACKGROUND PATERNS
+			  LEFT SIDE
+			  RIGHT SIDE
+		5. NAVIGATION
+		6. HOME
+			  SLIDER
+				CYCLE - SLIDER
+				CYCLE - SLIDER NAVIGATION
+				ANYTHING - SLIDER
+				ANYTHING SLIDER - NAVIGATION
+				SLIDER NAV BUTTONS
+			  BOXES
+			  BOXES GRID
+			  BUTTONS
+			  TWITTER
+			  ALIGNMENT
+		7. ABOUT	
+			  TOGGLE PANELS
+			  LISTS
+			  BOX ICONS PREVIEW
+		8. PORTFOLIO
+		9. BLOG
+			  BLOG COMMENTS
+	   10. CONTACT
+			  SOCIAL LINKS
+			
+================================================*/
+/* Color Variables */
+/********************BEGIN RESET********************/
+/* line 48, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+html, body, p, div, img, h1, h2, h3, h4, h5, li, ul, ol, dl, dd, dt, form, pagele, td, tr, blockquote, iframe {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  border-collapse: separate;
+  border-spacing: 0px; }
+
+/* line 56, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+* :focus {
+  outline: 0; }
+
+/*******************END RESET**************************-*/
+@font-face {
+  font-family: 'Bebas';
+  src: url('fonts/BebasNeue-webfont.eot');
+  src: local('¢'), url('fonts/BebasNeue-webfont.woff') format('woff'), url('fonts/BebasNeue-webfont.ttf') format('truetype'), url('fonts/BebasNeue-webfont.svg#webfontAGQ6uv7S') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: century_gothic;
+  src: url('fonts/century_gothic.ttf'); }
+
+/* line 74, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.clear {
+  clear: both; }
+
+/* line 76, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+html, body, #left, #right {
+  height: auto; }
+
+/* line 80, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+html, body, #left {
+  height: 100%;
+  width: 100%; }
+
+/* line 85, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+body {
+  color: #757575;
+  font-size: 12px;
+  font-family: Arial, san-serif;
+  line-height: 20px;
+  background-color: #f7f7f7; }
+
+/* line 93, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+h1, h2, h3, h5 {
+  font-family: Bebas, Arial, sans-serif;
+  font-weight: normal; }
+
+/* line 98, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+h1 {
+  font-size: 50px;
+  line-height: 40px;
+  color: #80CBC4;
+  text-shadow: 1px 1px #1e1e1e; }
+
+/* line 105, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+h2 {
+  font-size: 36px;
+  color: #263238; }
+
+/* line 110, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+h3 {
+  color: #757575;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 22px;
+  margin-bottom: 10px; }
+
+/* line 118, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+h4 {
+  font-family: Bebas, Tahoma, Arial, sans-serif;
+  color: #80CBC4;
+  font-size: 20px;
+  font-weight: normal; }
+
+/* line 125, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+h5 {
+  font-size: 22px; }
+
+/* line 129, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+h6 {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.5px; }
+
+/* line 135, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+a {
+  color: #80CBC4;
+  text-decoration: none; }
+
+/* line 140, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+a:hover {
+  text-decoration: underline; }
+
+/********************BEGIN TABLES*****************/
+/* line 145, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse; }
+
+/* line 151, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+th {
+  color: #80CBC4;
+  background: #f2f2f2;
+  text-align: left; }
+
+/* line 157, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+thead, th, tfoot {
+  font-weight: normal; }
+
+/* line 161, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+th, td, caption {
+  padding: 7px;
+  border-bottom: 1px dashed #c1c1c1; }
+
+/* line 166, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+tr.even td {
+  background: #f2f2f2; }
+
+/* line 170, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+caption {
+  color: #80CBC4;
+  border-collapse: collapse; }
+
+/*****************END TABLES************************/
+/*****************ANIMATE BANANA************************/
+/* line 178, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.ball {
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  z-index: 99; }
+
+/* line 185, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.ball img {
+  width: 90%; }
+
+/* line 190, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.ball-shadow {
+  background: radial-gradient(50% 50%, #111 0%, #263238 100%);
+  height: 10px;
+  width: 80px;
+  z-index: 99; }
+
+/* line 198, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.bouncy-castle {
+  height: 100%;
+  left: 25%;
+  position: absolute; }
+
+/* line 204, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.bouncy-castle .ball-shadow {
+  -webkit-animation-direction: alternate;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: grow;
+  -webkit-animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-name: grow;
+  animation-iteration-count: infinite;
+  bottom: 0;
+  position: absolute;
+  margin-left: -100px; }
+
+/* line 218, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.bouncy-castle .ball {
+  -webkit-animation-direction: alternate;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: bounce;
+  -webkit-animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  margin-left: -100px;
+  position: absolute; }
+
+@-webkit-keyframes grow {
+  /* line 232, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+  from {
+    bottom: 0;
+    margin-left: -100px;
+    height: 10px;
+    opacity: .6;
+    width: 100px; }
+
+  /* line 240, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+  to {
+    bottom: -15px;
+    margin-left: -150px;
+    height: 30px;
+    opacity: 0.2;
+    width: 200px; } }
+
+@-webkit-keyframes bounce {
+  /* line 250, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+  from {
+    bottom: 20px; }
+
+  /* line 254, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+  to {
+    bottom: 60px; } }
+
+/*******************BEGIN MISC*********************/
+/* line 261, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.separator-noline {
+  margin-bottom: 30px;
+  margin-top: 0px;
+  border: none; }
+
+/* line 267, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.separator-line {
+  border: none;
+  background: #eaeaea;
+  height: 7px;
+  margin-bottom: 30px;
+  margin-top: 0px; }
+
+/* line 275, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+blockquote {
+  background: url(../img/quotes.png) no-repeat;
+  font-size: 13px;
+  font-style: italic;
+  padding-left: 40px;
+  margin: 20px 0 20px 20px; }
+
+/* line 283, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.author {
+  text-align: right;
+  font-size: 12px;
+  font-style: normal;
+  color: #80CBC4; }
+
+/* line 290, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+abbr, acronym {
+  border-bottom: 1px solid #929292; }
+
+/* line 294, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+del {
+  color: #929292; }
+
+/* line 298, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+pre, code, tt {
+  font-family: 'lucida console', monospace;
+  color: #929292; }
+
+/* line 303, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ol li {
+  font-size: 12px; }
+
+/*****************END MISC ************************/
+/* line 309, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#left {
+  width: 33%;
+  position: fixed; }
+
+/* line 314, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#right {
+  width: 67%;
+  background-color: #f7f7f7;
+  float: right; }
+
+/*=== BACKGROUND PATTERNS
+==================================================*/
+/*=== LEFT SIDE
+==================================================*/
+/* line 325, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.grid-left {
+  background: url(../img/backgrounds/right/lines.png) repeat #263238; }
+
+/* line 329, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.plates {
+  /*background: url(../img/banana.svg) no-repeat 100% 0% $background;*/
+  background-color: #263238; }
+
+/* line 334, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.noise {
+  background: url(../img/backgrounds/left/noise.jpg) repeat; }
+
+/*=== RIGHT SIDE
+	==================================================*/
+/* line 341, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.lines-1 {
+  background: url(../img/backgrounds/right/lines.png) repeat; }
+
+/* line 345, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.lines-2 {
+  background: url(../img/backgrounds/right/lines-2.png) repeat; }
+
+/* line 349, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.square-grid {
+  background: url(../img/backgrounds/right/square-grid.png) repeat; }
+
+/* line 353, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.square-grid-big {
+  background: url(../img/backgrounds/right/square-grid-big.png) repeat; }
+
+/* line 357, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.cross {
+  background: url(../img/backgrounds/right/cross.png) repeat; }
+
+/* line 361, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.cross-big {
+  background: url(../img/backgrounds/right/cross-big.png) repeat; }
+
+/* line 367, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#content {
+  width: 610px;
+  padding: 0 20px; }
+
+/* line 372, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.page {
+  margin-bottom: 300px;
+  width: 610px;
+  padding: 30px 10px 30px 30px; }
+
+/* line 378, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#logo img {
+  height: 100px;
+  position: relative;
+  left: -100px;
+  bottom: -50px;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-name: tada;
+  -webkit-animation-iteration-count: infinite;
+  /* Hey browser, use your GPU */
+  -webkit-transform: translate3d(0, 0, 0); }
+
+@-webkit-keyframes tada {
+  /* line 391, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+
+  /* line 396, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+  1%, 2% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg); }
+
+  /* line 401, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+  3%, 5%, 7%, 9% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg); }
+
+  /* line 406, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+  4%, 6%, 8% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg); }
+
+  /* line 411, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+  10% {
+    -webkit-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0); }
+
+  /* line 416, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+/* line 423, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#logo {
+  padding: 85px 0 0 85px;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  margin-bottom: 5px; }
+
+/* line 431, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.logoWhite {
+  color: #fff; }
+
+/* line 435, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.logoYellow {
+  /*color:#FFF176;*/ }
+
+/* line 439, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#logo h1 a:hover {
+  text-decoration: none; }
+
+/* line 443, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#logo p {
+  color: #f7f7f7;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  text-shadow: 1px 1px #1e1e1e;
+  text-transform: uppercase;
+  text-align: right; }
+
+/* line 452, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#copyright {
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
+  font-size: 11px;
+  color: #757575;
+  margin-bottom: 0; }
+
+/* line 461, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.page h2 {
+  text-align: right;
+  line-height: 36px; }
+
+/* line 466, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.sub-title {
+  border-bottom: 7px solid #eaeaea;
+  margin-bottom: 30px;
+  font-size: 12px;
+  color: #8c8c8c;
+  display: block;
+  text-transform: uppercase;
+  text-align: right;
+  padding-bottom: 10px; }
+
+/* line 477, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.page-content {
+  width: 610px;
+  padding: 30px 10px 30px 30px; }
+
+/*=== NAVIGATION
+==================================================*/
+/* line 487, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ul#navigation {
+  font-family: Bebas, Arial, sans-serif;
+  text-align: right;
+  list-style: none;
+  margin: 70px 30px 0 0; }
+
+/* line 494, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ul#navigation li a {
+  font-size: 44px;
+  line-height: 46px;
+  text-align: right;
+  text-shadow: 1px 1px #1e1e1e;
+  color: #f7f7f7; }
+
+/* line 502, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ul#navigation li a:hover {
+  color: #fccf5f;
+  text-decoration: none; }
+
+/* line 507, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ul#navigation li a.active {
+  color: #fccf5f; }
+
+/*=== HOME
+==================================================*/
+/*====SLIDER
+=======================================================*/
+/* line 518, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.featured {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px; }
+
+/*====CYCLE - SLIDER
+=======================================================*/
+/* line 527, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.cycle {
+  height: 285px;
+  background: url(../img/slider-shadow.png) no-repeat bottom center; }
+
+/* line 533, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#slider-cycle {
+  width: 610px;
+  height: 263px;
+  overflow: hidden; }
+
+/* line 539, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#slider-cycle li {
+  position: relative; }
+
+/* line 543, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.caption {
+  color: #757575;
+  left: 15px;
+  bottom: 15px;
+  padding: 15px;
+  position: absolute;
+  background: url(../img/backgrounds/right/square-grid.png) repeat #e7e7e7;
+  width: 60%; }
+
+/* line 553, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.caption h3 {
+  color: #80CBC4; }
+
+/* line 557, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.caption p {
+  padding-bottom: 0px; }
+
+/* line 561, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#slider-cycle li {
+  width: 610px;
+  height: 263px;
+  overflow: hidden;
+  display: block; }
+
+/*====CYCLE - SLIDER NAVIGATION
+=======================================================*/
+/* line 572, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#slider-cycle-nav {
+  position: absolute;
+  z-index: 99;
+  bottom: 36px;
+  right: 15px; }
+
+/* line 579, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#slider-cycle-nav li {
+  display: block;
+  float: left;
+  margin-left: 3px; }
+
+/* line 585, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#slider-cycle-nav li a {
+  cursor: pointer;
+  display: block;
+  width: 37px;
+  height: 36px;
+  text-indent: -99999px; }
+
+/* line 593, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#cycle-prev {
+  background: url(../img/slider-arrows.png) no-repeat left bottom; }
+
+/* line 597, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#cycle-prev:hover {
+  background: url(../img/slider-arrows.png) no-repeat left top; }
+
+/* line 601, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#cycle-next {
+  background: url(../img/slider-arrows.png) no-repeat right bottom; }
+
+/* line 605, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#cycle-next:hover {
+  background: url(../img/slider-arrows.png) no-repeat right top; }
+
+/*=====================================================================*/
+/*====ANYTHING-SLIDER
+=======================================================*/
+/* line 615, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#slider {
+  width: 610px;
+  height: 224px;
+  overflow: hidden; }
+
+/* line 621, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#slider li {
+  width: 610px;
+  height: 224px;
+  overflow: hidden;
+  display: block; }
+
+/*====ANYTHING - SLIDES CONTENT
+=======================================================*/
+/* line 631, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.slide-img {
+  float: left;
+  margin-right: 30px; }
+
+/* line 636, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.slide-text {
+  float: left;
+  width: 408px; }
+
+/* line 641, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.slide-text h3 {
+  font-size: 30px;
+  color: #80CBC4;
+  line-height: 30px;
+  margin: 20px 0; }
+
+/* line 648, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.slide-text .button {
+  float: right;
+  margin-top: 10px; }
+
+/*====SLIDER NAV BUTTONS
+=======================================================*/
+/* line 656, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#prev-button, #next-button, .arrow {
+  display: none;
+  position: absolute;
+  top: 94px;
+  z-index: 1000;
+  text-indent: -9999px; }
+
+/* line 664, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#prev-button, .back {
+  left: 0px; }
+
+/* line 668, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#next-button, .forward {
+  right: 0px; }
+
+/* line 672, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#prev-button a, #next-button a, .arrow a {
+  display: block;
+  position: relative;
+  width: 37px;
+  height: 36px; }
+
+/* line 679, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#prev-button a, .back a {
+  background: url(../img/slider-arrows.png) no-repeat left bottom; }
+
+/* line 683, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#next-button a, .forward a {
+  background: url(../img/slider-arrows.png) no-repeat right bottom; }
+
+/* line 687, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#prev-button a, .back a:hover {
+  background: url(../img/slider-arrows.png) no-repeat left top; }
+
+/* line 691, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#next-button a, .forward a:hover {
+  background: url(../img/slider-arrows.png) no-repeat right top; }
+
+/*=====================================================================*/
+/* line 699, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.slogan {
+  font-family: Bebas, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #757575;
+  margin: 30px 0 15px 0; }
+
+/* line 707, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.slogan a:hover {
+  text-decoration: none;
+  color: #515151; }
+
+/*====BOXES
+=======================================================*/
+/* line 715, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.boxes {
+  width: 610px; }
+
+/* line 719, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.boxes img {
+  margin-bottom: 10px; }
+
+/* line 723, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+p {
+  padding-bottom: 15px; }
+
+/* line 727, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.boxes h3 {
+  margin-bottom: 0; }
+
+/* line 731, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.box-title {
+  margin-bottom: 10px; }
+
+/* line 735, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.box-icon {
+  float: left;
+  margin-right: 10px;
+  padding-top: 1px; }
+
+/* line 741, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.subtitle {
+  margin-top: -3px;
+  font-size: 11px;
+  color: #8c8c8c;
+  display: block; }
+
+/*====BOXES GRID
+=======================================================*/
+/* line 751, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.one-third {
+  float: left;
+  width: 190px;
+  margin-right: 20px;
+  margin-bottom: 15px; }
+
+/* line 758, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.two-third {
+  float: left;
+  width: 400px;
+  margin-right: 20px;
+  margin-bottom: 15px; }
+
+/* line 765, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.one-half {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  width: 295px; }
+
+/* line 772, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.full-width {
+  margin-bottom: 15px; }
+
+/* line 776, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.last {
+  margin-right: 0px; }
+
+/*====BUTTONS
+=======================================================*/
+/* line 783, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.boxes a, .post-more-link, .button {
+  font-size: 11px;
+  color: #f7f7f7;
+  padding: 3px 7px;
+  background: #80CBC4;
+  display: inline-block;
+  margin-bottom: 15px;
+  border-radius: 2px; }
+
+/* line 793, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.boxes a:hover, .post-more-link:hover, .button:hover {
+  background: #FBC02D;
+  text-decoration: none; }
+
+/*====TWITTER
+=======================================================*/
+/* line 800, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#twitter-feed {
+  margin-bottom: 15px; }
+
+/* line 804, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ul.tweet_list {
+  list-style: none; }
+
+/* line 808, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ul.tweet_list li {
+  margin-bottom: 15px;
+  background: url(../img/twitter.png) no-repeat 0px 7px;
+  padding-left: 25px; }
+
+/* line 814, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.tweet_text {
+  display: block;
+  margin-bottom: 3px; }
+
+/* line 819, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.tweet_time a {
+  font-size: 11px;
+  font-style: italic; }
+
+/*====ALIGNMENT
+=======================================================*/
+/* line 827, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.left {
+  float: left;
+  width: 255px;
+  margin-right: 20px; }
+
+/* line 833, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.right {
+  float: right;
+  width: 255px;
+  margin-left: 20px; }
+
+/* line 839, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.image-left {
+  float: left;
+  margin: 6px 15px 0px 0px; }
+
+/* line 844, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.image-right {
+  float: right;
+  margin: 6px 0px 0px 15px; }
+
+/*=== ABOUT
+==================================================*/
+/*====TOGGLE PANELS
+=======================================================*/
+/* line 857, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.toggles {
+  margin-bottom: 0px; }
+
+/* line 861, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.toggle-header {
+  border-bottom: 1px dashed #d1d1d1;
+  padding-bottom: 15px; }
+
+/* line 866, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.toggle-container h4 {
+  float: left;
+  color: #757575; }
+
+/* line 871, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.toggle-header a {
+  float: right;
+  text-transform: uppercase;
+  font-size: 11px; }
+
+/* line 877, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.toggle-content {
+  margin-top: 15px; }
+
+/* line 881, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.toggle-link {
+  height: 20px;
+  width: 20px; }
+
+/* line 886, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.toggle-open {
+  background: url(../img/toggle.png) no-repeat top center; }
+
+/* line 890, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.toggle-close {
+  background: url(../img/toggle.png) no-repeat bottom center; }
+
+/*====LISTS
+=======================================================*/
+/* line 897, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ul.custom-list {
+  list-style: none;
+  margin-bottom: 15px; }
+
+/* line 902, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ul.custom-list li, ol.custom-list li {
+  margin-bottom: 5px; }
+
+/* line 906, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ol li {
+  list-style: decimal inside none; }
+
+/* line 910, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.check li {
+  background: url(../img/bullets/check.png) no-repeat 0px 7px;
+  padding-left: 18px; }
+
+/* line 915, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.exclamation li {
+  background: url(../img/bullets/exclamation.png) no-repeat 0px 6px;
+  padding-left: 15px; }
+
+/* line 920, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.arrows li {
+  background: url(../img/bullets/arrow.png) no-repeat 0px 6px;
+  padding-left: 15px; }
+
+/* line 925, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.square li {
+  list-style: square inside none; }
+
+/* line 929, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.disc li {
+  list-style: disc inside none; }
+
+/*====BOX ICONS PREVIEW
+=======================================================*/
+/* line 936, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.box-icons-preview {
+  list-style: none; }
+
+/* line 940, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.box-icons-preview li {
+  display: inline;
+  margin: 0px 8px; }
+
+/*=== PORTFOLIO
+==================================================*/
+/* line 950, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#portfolio-content {
+  width: 630px;
+  height: 630px;
+  overflow: hidden;
+  position: relative; }
+
+/*
+	if Javascript is on, these classe will be disabled
+*/
+/*begin*/
+/* line 962, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.js-off-overflow {
+  overflow: visible !important; }
+
+/* line 966, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.js-off-position {
+  position: relative !important; }
+
+/*end*/
+/* line 972, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.portfolio-nav {
+  list-style: none; }
+
+/* line 976, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.portfolio-nav li {
+  display: inline; }
+
+/* line 980, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.portfolio-nav li a {
+  font-size: 11px;
+  margin-right: 10px;
+  color: #fff;
+  background: #757575;
+  padding: 6px 10px;
+  border-radius: 2px; }
+
+/* line 989, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.portfolio-nav li a:hover {
+  background: #FBC02D;
+  text-decoration: none; }
+
+/* line 994, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.portfolio-nav li a.current {
+  background: #FBC02D; }
+
+/* line 999, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ul.portfolio-thumbs {
+  z-index: 0;
+  list-style: none;
+  position: absolute; }
+
+/* line 1007, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ul.portfolio-thumbs li {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden; }
+
+/* line 1015, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ul.portfolio-thumbs a {
+  display: block;
+  width: 190px;
+  height: 190px;
+  overflow: hidden; }
+
+/* line 1022, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.overlay {
+  font-size: 11px;
+  line-height: 16px;
+  background: #263238;
+  position: absolute;
+  top: 190px;
+  left: 0;
+  z-index: 5;
+  width: 150px;
+  height: 150px;
+  padding: 20px; }
+
+/* line 1035, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.overlay p {
+  padding-bottom: 0px; }
+
+/* line 1039, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.overlay h5 {
+  font-family: Bebas, Arial, sans-serif;
+  font-size: 22px;
+  color: #80CBC4;
+  font-weight: normal;
+  margin-bottom: 20px; }
+
+/* line 1047, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ul.portfolio-thumbs li .zoom-btn, ul.portfolio-thumbs li .play-btn {
+  padding: 5px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 2px; }
+
+/* line 1058, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ul.portfolio-thumbs li .zoom-btn {
+  background: url(../img/zoom.png) center no-repeat #8c8c8c; }
+
+/* line 1062, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ul.portfolio-thumbs li .play-btn {
+  background: url(../img/play.png) center no-repeat #8c8c8c; }
+
+/* line 1066, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+ul.portfolio-thumbs li .zoom-btn:hover, ul.portfolio-thumbs li .play-btn:hover {
+  background-color: #FBC02D; }
+
+/*=== BLOG
+==================================================*/
+/* line 1073, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.blog-post {
+  margin-bottom: 15px; }
+
+/* line 1077, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.post-title h3 {
+  font-size: 30px;
+  line-height: 30px; }
+
+/* line 1082, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.post-title h3 a {
+  color: #757575; }
+
+/* line 1086, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.post-title h3 a:hover {
+  color: #414141;
+  text-decoration: none; }
+
+/* line 1091, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.post-metadata p {
+  font-size: 11px;
+  padding-bottom: 0px; }
+
+/* line 1097, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.post-metadata {
+  border-top: 1px dashed #d1d1d1;
+  border-bottom: 1px dashed #d1d1d1;
+  padding: 4px 0;
+  margin-bottom: 15px; }
+
+/* line 1104, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.post-content img {
+  margin-bottom: 10px;
+  border: 1px solid #d1d1d1;
+  padding: 4px; }
+
+/* line 1110, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.post-content {
+  clear: both;
+  margin-bottom: 30px; }
+
+/* line 1115, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.post-more-link {
+  margin-bottom: 0px; }
+
+/*====BLOG COMMENTS
+=======================================================*/
+/* line 1123, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.comments-section {
+  padding-bottom: 30px; }
+
+/* line 1127, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.comments-section h3 {
+  text-align: right;
+  font-size: 26px;
+  font-family: Bebas, Arial, sans-serif;
+  color: #757575;
+  margin-bottom: 30px; }
+
+/* line 1135, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.comment {
+  margin-bottom: 15px; }
+
+/* line 1139, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.avatar {
+  float: left;
+  margin-right: 15px; }
+
+/* line 1144, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.avatar img {
+  border: 1px solid #e1e1e1;
+  padding: 4px; }
+
+/* line 1149, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.comment-text {
+  float: left;
+  width: 493px;
+  background: #f7f7f7;
+  padding: 15px;
+  border: 1px solid #e1e1e1;
+  position: relative; }
+
+/* line 1158, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.comment-text small {
+  margin-bottom: 10px;
+  display: block; }
+
+/* line 1163, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.comment-text cite {
+  color: #80CBC4; }
+
+/* line 1167, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.comment-reply {
+  position: absolute;
+  top: 15px;
+  right: 15px; }
+
+/* line 1173, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#comments-form {
+  margin: 30px 0 100px 0; }
+
+/*=== CONTACT
+==================================================*/
+/* line 1181, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#google-map {
+  margin-bottom: 15px;
+  padding: 6px 6px 6px 6px;
+  border: 1px solid #d1d1d1; }
+
+/* line 1187, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+form {
+  width: 400px; }
+
+/* line 1191, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.textbox {
+  color: #757575;
+  width: 262px;
+  margin-bottom: 15px;
+  padding: 6px;
+  background-color: #f7f7f7;
+  border: 1px solid #e1e1e1;
+  font-family: inherit;
+  font-size: inherit; }
+
+/* line 1202, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+label {
+  padding-top: 6px;
+  float: left;
+  width: 70px;
+  overflow: hidden; }
+
+/* line 1209, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#message, #comment {
+  height: 135px;
+  width: 316px; }
+
+/* line 1214, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#submit, #post-comment {
+  margin-left: 70px;
+  margin-bottom: 15px;
+  float: left;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 11px;
+  color: #fff;
+  background: #80CBC4;
+  padding: 6px 10px;
+  border: none; }
+
+/* line 1227, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#submit:hover, #post-comment:hover {
+  background: #8c8c8c; }
+
+/* line 1231, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+#message-outcome {
+  clear: both;
+  margin-left: 70px; }
+
+/* line 1237, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.social-networks {
+  padding-top: 10px; }
+
+/* line 1241, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.social-links {
+  list-style: none; }
+
+/* line 1245, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.social-links li {
+  display: inline;
+  margin-right: 6px;
+  text-indent: -9999px; }
+
+/* line 1251, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.social-links li a {
+  display: inline-block;
+  margin-bottom: 6px;
+  width: 25px;
+  height: 25px;
+  overflow: hidden; }
+
+/*=== SOCIAL LINKS
+==================================================*/
+/* line 1263, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.facebook a {
+  background: url(../img/social/facebook.png) no-repeat top center; }
+
+/* line 1264, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.facebook a:hover {
+  background: url(../img/social/facebook.png) no-repeat bottom center; }
+
+/* line 1265, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.blogger a {
+  background: url(../img/social/blogger.png) no-repeat top center; }
+
+/* line 1266, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.blogger a:hover {
+  background: url(../img/social/blogger.png) no-repeat bottom center; }
+
+/* line 1267, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.delicious a {
+  background: url(../img/social/delicious.png) no-repeat top center; }
+
+/* line 1268, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.delicious a:hover {
+  background: url(../img/social/delicious.png) no-repeat bottom center; }
+
+/* line 1269, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.deviant a {
+  background: url(../img/social/deviant.png) no-repeat top center; }
+
+/* line 1270, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.deviant a:hover {
+  background: url(../img/social/deviant.png) no-repeat bottom center; }
+
+/* line 1271, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.dribbble a:hover {
+  background: url(../img/social/dribbble.png) no-repeat bottom center; }
+
+/* line 1272, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.dribbble a {
+  background: url(../img/social/dribbble.png) no-repeat top center; }
+
+/* line 1273, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.digg a:hover {
+  background: url(../img/social/digg.png) no-repeat bottom center; }
+
+/* line 1274, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.git a:hover {
+  background: url(../img/social/git.png) no-repeat bottom center; }
+
+/* line 1275, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.git a {
+  background: url(../img/social/git.png) no-repeat top center; }
+
+/* line 1276, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.digg a:hover {
+  background: url(../img/social/digg.png) no-repeat bottom center; }
+
+/* line 1277, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.flickr a {
+  background: url(../img/social/flickr.png) no-repeat top center; }
+
+/* line 1278, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.flickr a:hover {
+  background: url(../img/social/flickr.png) no-repeat bottom center; }
+
+/* line 1279, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.forrst a {
+  background: url(../img/social/forrst.png) no-repeat top center; }
+
+/* line 1280, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.forrst a:hover {
+  background: url(../img/social/forrst.png) no-repeat bottom center; }
+
+/* line 1281, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.lastfm a {
+  background: url(../img/social/lastfm.png) no-repeat top center; }
+
+/* line 1282, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.lastfm a:hover {
+  background: url(../img/social/lastfm.png) no-repeat bottom center; }
+
+/* line 1283, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.linkedin a {
+  background: url(../img/social/linkedin.png) no-repeat top center; }
+
+/* line 1284, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.linkedin a:hover {
+  background: url(../img/social/linkedin.png) no-repeat bottom center; }
+
+/* line 1285, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.myspace a {
+  background: url(../img/social/myspace.png) no-repeat top center; }
+
+/* line 1286, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.myspace a:hover {
+  background: url(../img/social/myspace.png) no-repeat bottom center; }
+
+/* line 1287, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.reddit a {
+  background: url(../img/social/reddit.png) no-repeat top center; }
+
+/* line 1288, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.reddit a:hover {
+  background: url(../img/social/reddit.png) no-repeat bottom center; }
+
+/* line 1289, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.rss a {
+  background: url(../img/social/rss.png) no-repeat top center; }
+
+/* line 1290, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.rss a:hover {
+  background: url(../img/social/rss.png) no-repeat bottom center; }
+
+/* line 1291, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.share a {
+  background: url(../img/social/share.png) no-repeat top center; }
+
+/* line 1292, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.share a:hover {
+  background: url(../img/social/share.png) no-repeat bottom center; }
+
+/* line 1293, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.skype a {
+  background: url(../img/social/skype.png) no-repeat top center; }
+
+/* line 1294, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.skype a:hover {
+  background: url(../img/social/skype.png) no-repeat bottom center; }
+
+/* line 1295, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.stumble a {
+  background: url(../img/social/stumble.png) no-repeat top center; }
+
+/* line 1296, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.stumble a:hover {
+  background: url(../img/social/stumble.png) no-repeat bottom center; }
+
+/* line 1297, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.technocrati a {
+  background: url(../img/social/technocrati.png) no-repeat top center; }
+
+/* line 1298, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.technocrati a:hover {
+  background: url(../img/social/technocrati.png) no-repeat bottom center; }
+
+/* line 1299, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.tumblr a {
+  background: url(../img/social/tumblr.png) no-repeat top center; }
+
+/* line 1300, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.tumblr a:hover {
+  background: url(../img/social/tumblr.png) no-repeat bottom center; }
+
+/* line 1301, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.twitter a {
+  background: url(../img/social/twitter.png) no-repeat top center; }
+
+/* line 1302, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.twitter a:hover {
+  background: url(../img/social/twitter.png) no-repeat bottom center; }
+
+/* line 1303, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.vimeo a {
+  background: url(../img/social/vimeo.png) no-repeat top center; }
+
+/* line 1304, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.vimeo a:hover {
+  background: url(../img/social/vimeo.png) no-repeat bottom center; }
+
+/* line 1305, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.yahoo a {
+  background: url(../img/social/yahoo.png) no-repeat top center; }
+
+/* line 1306, /Users/matmeiers/Desktop/repos/badforbananas/css/style.scss */
+.yahoo a:hover {
+  background: url(../img/social/yahoo.png) no-repeat bottom center; }
+
+/*# sourceMappingURL=style.css.map */
